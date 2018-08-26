@@ -16,6 +16,7 @@ component
         // do something
     })
 ```
+Full example: https://github.com/metacursion/CustomMetadataClientSync/tree/master/CustomMetadataClientSync/main/default/aura/CustomMetadataExample
 
 Depends on lax: https://github.com/ruslan-kurchenko/sfdc-lax
 
