@@ -1,0 +1,9 @@
+<aura:component controller="CustomMetadataService">
+    <c:lax context="{!this}" />
+    <aura:method name="upsert">
+        <aura:attribute name="records" type="Sobject[]" />
+    </aura:method>
+    <aura:method name="delete">
+        <aura:attribute name="records" type="String[]" />
+    </aura:method>
+</aura:component>

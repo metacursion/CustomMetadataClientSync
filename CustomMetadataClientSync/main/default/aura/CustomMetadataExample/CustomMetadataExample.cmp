@@ -1,0 +1,29 @@
+<aura:component description="Example use of CustomMetadataService">
+    <c:CustomMetadataService aura:id="CustomMetadataService" />
+    <aura:attribute name="type" type="String" />
+    <aura:attribute name="label" type="String" default="Sample Label"/>
+    <aura:attribute name="name" type="String" default="Sample_Name" />
+    <aura:attribute name="label1" type="String" />
+    <aura:attribute name="label2" type="String" />
+    <aura:attribute name="name1" type="String" />
+    <aura:attribute name="name2" type="String" />
+    <aura:attribute name="type1" type="String" />
+    <aura:attribute name="type2" type="String" />
+    <lightning:input type="text" label="Custom Metadata API name" value="{!v.type}" placeholder="Custom__mdt"/>
+    <br/>
+    <lightning:input type="text" label="Label" value="{!v.label}" />
+    <lightning:input type="text" label="Name" value="{!v.name}" />
+    <lightning:button onclick="{!c.create}" label="Create" />
+    <lightning:button onclick="{!c.delete}" label="Delete" />
+
+    <br/><br/>
+    <lightning:input type="text" label="Type" value="{!v.type1}" />
+    <lightning:input type="text" label="Label" value="{!v.label1}" />
+    <lightning:input type="text" label="Name" value="{!v.name1}" />
+    <lightning:input type="text" label="Type" value="{!v.type2}" />
+    <lightning:input type="text" label="Label" value="{!v.label2}" />
+    <lightning:input type="text" label="Name" value="{!v.name2}" />
+    <lightning:button onclick="{!c.createBulk}" label="Create Bulk" />
+    <lightning:button onclick="{!c.deleteBulk}" label="Delete Bulk" />
+    <br/>
+</aura:component>

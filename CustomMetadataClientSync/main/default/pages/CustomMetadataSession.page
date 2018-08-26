@@ -1,0 +1,4 @@
+<apex:page showHeader="false" sidebar="false" controller="CustomMetadataSession">
+    {!START_SID}{!$Api.Session_ID}{!END_SID}
+    {!START_BASEURL}{!baseURL}{!END_BASEURL}
+</apex:page>
